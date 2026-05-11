@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,36 +54,37 @@
       .hero__content {
         position: relative;
         z-index: 1;
-        width: min(760px, 100%);
-        margin-bottom: clamp(28px, 6vh, 80px);
+        width: min(980px, calc(100vw - 48px));
+        margin-bottom: clamp(48px, 7vh, 92px);
         text-align: center;
       }
 
       .hero__name {
         margin: 0;
-        font-size: clamp(3.5rem, 8vw, 7.25rem);
+        font-size: clamp(4rem, 6.2vw, 6.25rem);
         font-weight: 700;
         line-height: 0.9;
         letter-spacing: 0;
+        white-space: nowrap;
       }
 
       .hero__kicker {
-        margin: 28px 0 0;
-        font-size: clamp(1.15rem, 2.1vw, 1.65rem);
+        margin: 30px 0 0;
+        font-size: clamp(1.25rem, 2vw, 1.6rem);
         font-weight: 500;
         line-height: 1.35;
       }
 
       .hero__text {
-        max-width: 720px;
+        max-width: 760px;
         margin: 18px auto 0;
-        font-size: clamp(1.05rem, 2vw, 1.55rem);
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
         font-weight: 400;
-        line-height: 1.55;
+        line-height: 1.5;
       }
 
       .links {
-        margin-top: 46px;
+        margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -121,11 +122,13 @@
         }
 
         .hero__content {
-          margin-bottom: 28px;
+          width: min(100%, 430px);
+          margin-bottom: 26px;
         }
 
         .hero__name {
-          font-size: clamp(2.4rem, 14vw, 4.25rem);
+          font-size: clamp(2.6rem, 13vw, 4rem);
+          white-space: normal;
         }
 
         .hero__kicker {
